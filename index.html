@@ -14,233 +14,240 @@
 </head>
 
 <body>
-    <div class="container w-full lg:w-11/12 mx-auto bg-gray-50">
-        <header>
-            <nav class=" bg-white border-gray-200 ">
-                <div class=" flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="#" class="flex items-center">
-                        <img src="./assets/logo.png" class="h-14 mr-3 rounded-xl" alt="Flowbite Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap">Food Discover</span>
-                    </a>
-                    <button data-collapse-toggle="navbar-default" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
-                        aria-controls="navbar-default" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
-                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                        <ul
-                            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
-                            <li>
-                                <a href="#" class="block py-2 pl-3 pr-4  rounded md:bg-transparentv md:px-0 md:py-2 "
-                                    aria-current="page">Home</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:px-0 md:py-2 ">About</a>
-                            </li>
-                            <li>
-                                <a href="./html/categories.html"
-                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:px-0 md:py-2 ">Categories</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:px-0 md:py-2 ">Store</a>
-                            </li>
-                            <li>
-                                <a href="./html/login.html"
-                                    class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:px-4 md:py-2 bg-[#D6D46D] ">Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
 
-        </header>
-        <main>
-            <!-- slide -->
-            <div id="indicators-carousel" class="relative w-full" data-carousel="static">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-[480px] lg:h-[580px]">
-                    <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="./assets/slide-amzaon.png"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
-                            alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="./assets/slide-pong.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
-                            alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="./assets/slide-dq.jpg"
-                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
-                            alt="...">
-                    </div>
-
-                </div>
-                <!-- Slider indicators -->
-                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                        data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                        data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                        data-carousel-slide-to="2"></button>
-                </div>
-                <!-- Slider controls -->
-                <button type="button"
-                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-prev>
-                    <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 1 1 5l4 4" />
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
+    <header class="max-w-screen-lg mx-auto">
+        <nav class=" bg-white border-gray-200 ">
+            <div class=" flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center">
+                    <img src="./assets/logo.png" class="h-14 mr-3 rounded-xl" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap">Food Discover</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
                 </button>
-                <button type="button"
-                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-next>
-                    <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 9 4-4-4-4" />
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+                        <li>
+                            <a href="#" class="block py-2 pl-3 pr-4  rounded md:bg-transparentv md:px-0 md:py-2 "
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:px-0 md:py-2 ">About</a>
+                        </li>
+                        <li>
+                            <a href="./html/categories.html"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:px-0 md:py-2 ">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:px-0 md:py-2 ">Store</a>
+                        </li>
+                        <li>
+                            <a href="./html/login.html"
+                                class="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 md:px-4 md:py-2 bg-[#D6D46D] ">Login</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
 
-        </main>
+    </header>
 
-        <!-- Popular -->
+    <section>
+        <!-- slide -->
+        <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-[480px] lg:h-[580px]">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <img src="./assets/slide-pong.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+                        alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./assets/slide-amzaon.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+                        alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./assets/slide-dq.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+                        alt="...">
+                </div>
+
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Popular -->
+    <div class="max-w-screen-lg mx-auto">
+
         <section>
             <h2 class="text-3xl font-bold mt-24 mx-auto text-center">Most Popular Place</h2>
             <p class="mx-auto text-center text-gray-500 mb-8">Choose place you interesting in our popular selections</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-11/12 mx-auto mb-12 gap-10">
 
-                <div class="max-w-sm md:w-[300px] h-[440px] bg-[#FEDEB4] border border-gray-200 rounded-3xl shadow">
+            <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 mx-auto mb-12 gap-4">
+                <div class="max-w-xs mx-auto h-96 bg-[#FEDEB4] border border-gray-200 rounded-3xl shadow">
                     <a href="#">
-                        <img class="rounded-t-3xl w-full" src="./assets/coffee-amazon.png" alt="" />
+                        <img class="rounded-t-3xl w-full h-56" src="./assets/coffee-amazon.png" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                            <h5 class="text-xl font-medium tracking-tight text-gray-900 mb-2">
                                 Amazon Coffee
                             </h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <p class="font-medium"><i class="fa-solid fa-mug-hot"></i> Coffee</p>
+                        <p>Taste of Nature and comfort space.</p>
+                        
                     </div>
                 </div>
-                <div class="max-w-sm md:w-[300px] h-[440px] bg-[#FEDEB4] border border-gray-200 rounded-3xl shadow">
+                <div class="max-w-xs mx-auto h-96 bg-[#FEDEB4] border border-gray-200 rounded-3xl shadow">
                     <a href="#">
-                        <img class="rounded-t-3xl w-full" src="./assets/dessert-mixue.png" alt="" />
+                        <img class="rounded-t-3xl w-full h-56" src="./assets/dessert-mixue.png" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                                Amazon Coffee
+                            <h5 class="mb-2 text-xl font-medium tracking-tight text-gray-900">
+                                Mixue
                             </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
+                        </a> 
+                        <p class="font-medium"><i class="fa-solid fa-ice-cream"></i> Ice Cream</p>
+                        <p>I Love You You Love Me MIXUE Ice Cream & Tea </p>
                     </div>
                 </div>
-                <div class="max-w-sm md:w-[300px] h-[440px] bg-[#FEDEB4] border border-gray-200 rounded-3xl shadow">
+                <div class="max-w-xs mx-auto h-96 bg-[#FEDEB4] border border-gray-200 rounded-3xl shadow">
                     <a href="#">
-                        <img class="rounded-t-3xl w-full" src="./assets/fastfood-pong.png" alt="" />
+                        <img class="rounded-t-3xl w-full h-56" src="./assets/fastfood-pong.png" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                                Amazon Coffee
+                            <h5 class="mb-2 text-xl font-medium tracking-tight text-gray-900">
+                                Pong
                             </h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
-                    </div>
-                </div>
-                <div class="max-w-sm md:w-[300px] h-[440px] bg-[#FEDEB4] border border-gray-200 rounded-3xl shadow">
-                    <a href="#">
-                        <img class="rounded-t-3xl w-full" src="./assets/coffee-amazon.png" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                                Amazon Coffee
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise
-                            technology
-                            acquisitions of 2021 so far, in reverse chronological order.</p>
+     
+                        <p class="font-medium"><i class="fa-solid fa-burger"></i> Fast Food</p>
+                       <p> Toast Chain No.1 in Cambodia Pong offers </p>
                     </div>
                 </div>
 
+                <div class="max-w-xs mx-auto h-96 bg-[#FEDEB4] border border-gray-200 rounded-3xl shadow">
+                    <a href="#">
+                        <img class="rounded-t-3xl w-full h-56" src="./assets/dessert-swensen.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-xl font-medium tracking-tight text-gray-900">
+                                Swensen
+                            </h5>
+                        </a>
+     
+                        <p class="font-medium"><i class="fa-solid fa-ice-cream"></i> Ice Cream</p>
+                       <p> Happiness Never Melts! Best ice cream ever</p>
+                    </div>
+                </div>
+      
+     
+    
             </div>
-
-
-
+    
+    
+    
         </section>
-
+    
         <!-- Category -->
         <section class="mb-4 px-4">
             <h2 class="text-3xl font-bold my-4 mb-8">Category</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 lg:w-[10/12]">
-                <div class=" bg-[#FEDEB4] rounded-3xl w-[320px]  ">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class=" bg-[#FEDEB4] rounded-3xl">
                     <div class="w-full bg-[#FFFCF3] h-[220px]">
-                        <img src="assets/categoires/fast-food.png" alt="" class="w-[210px] m-auto md:h-40 pt-6 cursor-pointer">
+                        <img src="assets/categoires/fast-food.png" alt=""
+                            class="w-[210px] m-auto md:h-40 pt-6 cursor-pointer">
                     </div>
                     <h3 class="text-center font-bold text-xl py-2">Fast Food</h3>
                 </div>
-                <div class=" bg-[#FEDEB4] rounded-3xl w-[320px]  ">
+                <div class=" bg-[#FEDEB4] rounded-3xl  ">
                     <div class="w-full bg-[#FFFCF3] h-[220px]">
                         <img src="assets/categoires/bubble-tea.png" alt=""
                             class="w-[210px] m-auto md:h-40 lg:h-[180px] pt-6 cursor-pointer">
                     </div>
                     <h3 class="text-center font-bold text-xl py-2">Berverage</h3>
                 </div>
-                <div class=" bg-[#FEDEB4] rounded-3xl w-[320px]  ">
+                <div class=" bg-[#FEDEB4] rounded-3xl  ">
                     <div class="w-full bg-[#FFFCF3] h-[220px]">
                         <img src="assets/categoires/ice-cream1.png" alt=""
                             class="w-[210px] m-auto md:h-40 lg:h-[165px] pt-6 cursor-pointer">
                     </div>
                     <h3 class="text-center font-bold text-xl py-2">Dessert</h3>
                 </div>
-                <div class=" bg-[#FEDEB4] rounded-3xl w-[320px]  ">
+                <div class=" bg-[#FEDEB4] rounded-3xl  ">
                     <div class="w-full bg-[#FFFCF3] h-[220px]">
                         <img src="assets/categoires/skewer.png" alt=""
                             class="w-[210px] m-auto md:h-40 lg:h-[180px] pt-6 cursor-pointer">
                     </div>
                     <h3 class="text-center font-bold text-xl py-2">Street Food</h3>
                 </div>
-
+    
             </div>
         </section>
-
+    
         <!-- Review -->
         <section class="bg-gray-100 py-8 px-4">
             <h2 class="text-3xl font-bold mb-8">Reviewer</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 w-11/12 mx-auto">
-
+    
                 <!-- New Review 1 -->
-                <div class="bg-white rounded-2xl w-[430px] h-[210px] flex">
+                <div class="bg-white rounded-2xl w-auto h-[210px] flex">
                     <div class="mt-10 mx-2">
                         <img src="./assets/review1.png" alt="">
                     </div>
@@ -257,7 +264,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             </p>
-
+    
                             <p>100</p>
                         </div>
                         <div>
@@ -267,7 +274,7 @@
                         <p>Good coffee tests, best service, and comfort space. </p>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl w-[430px] h-[210px] flex">
+                <div class="bg-white rounded-2xl w-auto h-[210px] flex">
                     <div class="mt-10 mx-2">
                         <img src="./assets/review1.png" alt="">
                     </div>
@@ -284,7 +291,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             </p>
-
+    
                             <p>100</p>
                         </div>
                         <div>
@@ -294,7 +301,7 @@
                         <p>Good coffee tests, best service, and comfort space. </p>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl w-[430px] h-[210px] flex">
+                <div class="bg-white rounded-2xl w-auto h-[210px] flex">
                     <div class="mt-10 mx-2">
                         <img src="./assets/review1.png" alt="">
                     </div>
@@ -311,7 +318,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             </p>
-
+    
                             <p>100</p>
                         </div>
                         <div>
@@ -321,7 +328,7 @@
                         <p>Good coffee tests, best service, and comfort space. </p>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl w-[430px] h-[210px] flex">
+                <div class="bg-white rounded-2xl w-auto h-[210px] flex">
                     <div class="mt-10 mx-2">
                         <img src="./assets/review1.png" alt="">
                     </div>
@@ -338,7 +345,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             </p>
-
+    
                             <p>100</p>
                         </div>
                         <div>
@@ -348,7 +355,7 @@
                         <p>It’s crispy that make me crave for more lol 😆 </p>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl w-[430px] h-[210px] flex">
+                <div class="bg-white rounded-2xl w-auto h-[210px] flex">
                     <div class="mt-10 mx-2">
                         <img src="./assets/review1.png" alt="">
                     </div>
@@ -365,7 +372,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             </p>
-
+    
                             <p>100</p>
                         </div>
                         <div>
@@ -375,7 +382,7 @@
                         <p>Good coffee tests, best service, and comfort space. </p>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl w-[430px] h-[210px] flex">
+                <div class="bg-white rounded-2xl w-auto h-[210px] flex">
                     <div class="mt-10 mx-2">
                         <img src="./assets/review1.png" alt="">
                     </div>
@@ -392,7 +399,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             </p>
-
+    
                             <p>100</p>
                         </div>
                         <div>
@@ -402,11 +409,11 @@
                         <p>Good coffee tests, best service, and comfort space. </p>
                     </div>
                 </div>
-
+    
             </div>
-
+    
         </section>
-
+    
         <!-- footer -->
         <footer class="mt-6">
             <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 w-11/12 mx-auto">
@@ -445,12 +452,13 @@
                         <li><i class="fa-brands fa-instagram"></i> Instagram</li>
                     </ul>
                 </div>
-
+    
             </div>
             <p class="mx-auto w-32 py-4 text-gray-500">Copyright ©2023</p>
         </footer>
+    
     </div>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
 </body>
